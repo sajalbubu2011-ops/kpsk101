@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack sidebar and main content vertically */
+    }
+  
+    .sidebar {
+      width: 100%; /* Take full width */
+      text-align: center; /* Center align text in sidebar */
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  
+    .candidate {
+      width: 100%; /* Make candidates take full width */
+      max-width: 100%;
+    }
+  
+    .class, .sec, .roll {
+      display: block; /* Stack class, section, and roll fields vertically */
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .candidate {
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
